@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useState } from 'react';
 
 // functional components
@@ -62,26 +63,7 @@ function Footer() {
 function Home() {
   // crafts is variable, setCrafts is method to change variable
   // useState hook keeps variable reactive and updates DOM if craft is added or deleted
-  const [crafts, setCrafts] = useState([
-    {
-      name: "Potato Dolls",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      materials: "potatoes",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq3h_G3rNfaCTvdqR-WXLnHWDks4qGJ9VrHw&usqp=CAU",
-    },
-    {
-      name: "Painted rocks",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      materials: "rocks and paint",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfegGYg48PBQAGXtDmk8SqoetQWeY5EO4Ruh4-zBjzq61KPbv13-c460giPj4R6niLolQ&usqp=CAU"
-    },
-    {
-      name: "Shrinky Dink Crafts",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      materials: "markers, oven, shrinky dink paper",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHw8-giefeQTQSAXwD40aDxw4gixdEf9XrAg&usqp=CAU",
-    },
-    ]);
+  const [crafts, setCrafts] = useState([]);
   return (
     <div>
       <CraftsNew/>
