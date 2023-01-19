@@ -1,5 +1,6 @@
-import { useState } from "react";
+import React, { useState } from 'react';
 
+// functional components
 function Header() {
   return (
     <div>
