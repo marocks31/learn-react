@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 // functional components
 function Header() {
@@ -73,6 +73,9 @@ function Home() {
       setCrafts(response.data);
     });
   };
+  //first arguement is function you want to run, second is an array of dependencies that react uses to determine when to run the first function
+  useEffect(handleIndexCrafts, []);
+
   return (
     <div>
       <CraftsNew/>
