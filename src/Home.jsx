@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState, useEffect } from 'react';
 import { CraftsNew } from "./CraftsNew";
 import { CraftsIndex } from "./CraftsIndex";
+import { CraftsShow } from "./CraftsShow";
 import { Modal } from "./Modal";
 
 
@@ -38,7 +39,7 @@ export function Home() {
       <CraftsNew />
       <CraftsIndex myCrafts={crafts} onSelectCraft={handleShowCraft} />
       <Modal show={isCraftShowModalVisable} onClose={handleHideCraftModal}>
-        <p> {currentCraft.description}</p>
+        <CraftsShow craft={currentCraft} />
       </Modal>
     </div>
   );
