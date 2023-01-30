@@ -12,6 +12,7 @@ export function CraftsIndex(props) {
           <img src={craft.image} alt="diy craft" />
           <h5>Description: {craft.description}</h5>
           <h5>Materials: {craft.materials}</h5>
+          <button onClick={props.onSelectCraft} >More info</button>
         </div>
       ))}
     </div>
