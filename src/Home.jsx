@@ -10,6 +10,7 @@ export function Home() {
   // useState hook keeps variable reactive and updates DOM if craft is added or deleted
   const [crafts, setCrafts] = useState([]);
   const [isCraftShowModalVisable, setIsCraftShowModalVisable] = useState(false);
+  const [currentCraft, setCurrentCraft] = useState({});
 
   //function that grabs data
   const handleIndexCrafts = () => {
@@ -20,8 +21,9 @@ export function Home() {
     });
   };
 
-  const handleShowCraft = () => {
+  const handleShowCraft = (craft) => {
     setIsCraftShowModalVisable(true);
+    setCurrentCraft(craft);
   }
 
   const handleHideCraftModal = () => {
@@ -36,7 +38,7 @@ export function Home() {
       <CraftsNew />
       <CraftsIndex myCrafts={crafts} onSelectCraft={handleShowCraft} />
       <Modal show={isCraftShowModalVisable} onClose={handleHideCraftModal}>
-        <p>test</p>
+        <p> {currentCraft.description}</p>
       </Modal>
     </div>
   );
