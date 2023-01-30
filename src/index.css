@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+#root {
+  background-image: url('assets/wood.png');
+}
+
+.navbar-brand {
+  font-family: 'Sigmar One', cursive;
+  font-size: 40px !important;
+}
+
 #crafts-index img {
-  width: 300px
+  width: 300px;
 }
 
 html {
