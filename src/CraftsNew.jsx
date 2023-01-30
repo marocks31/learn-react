@@ -7,16 +7,16 @@ export function CraftsNew() {
       <h1>New craft</h1>
       <form>
         <div>
-          Name: <input type="text" />
+          Name: <input type="text"/>
         </div>
         <div>
-          Description: <input type="text" />
+          Description: <input type="text"/>
         </div>
         <div>
-          Materials: <input type="text" />
+          Materials: <input type="text"/>
         </div>
         <div>
-          Image: <input type="text" />
+          Image: <input type="text"/>
         </div>
         <button>Create craft</button>
       </form>

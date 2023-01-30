@@ -1,10 +1,9 @@
 import axios from "axios";
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { CraftsNew } from "./CraftsNew";
 import { CraftsIndex } from "./CraftsIndex";
 import { CraftsShow } from "./CraftsShow";
 import { Modal } from "./Modal";
-
 
 export function Home() {
   // crafts is variable, setCrafts is method to change variable
@@ -34,12 +33,11 @@ export function Home() {
   useEffect(handleIndexCrafts, []);
 
   return (
-    <div>
-      <button onClick={handleShowCraft}>Show Modal</button>
+    <div className="container">
       <CraftsNew />
-      <CraftsIndex myCrafts={crafts} onSelectCraft={handleShowCraft} />
+      <CraftsIndex myCrafts={crafts} onSelectCraft={handleShowCraft}/>
       <Modal show={isCraftShowModalVisable} onClose={handleHideCraftModal}>
-        <CraftsShow craft={currentCraft} />
+        <CraftsShow craft={currentCraft}/>
       </Modal>
     </div>
   );

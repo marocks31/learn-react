@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 export function CraftsIndex(props) {
   console.log(props.myCrafts);
   return (
@@ -9,10 +8,10 @@ export function CraftsIndex(props) {
       {props.myCrafts.map((craft) => (
         <div key={craft.id} className="crafts">
           <h2>{craft.name}</h2>
-          <img src={craft.image} alt="diy craft" />
+          <img src={craft.image} alt="diy craft"/>
           <h5>Description: {craft.description}</h5>
           <h5>Materials: {craft.materials}</h5>
-          <button onClick={() => props.onSelectCraft(craft)} >More info</button>
+          <button onClick={() => props.onSelectCraft(craft)}>More info</button>
         </div>
       ))}
     </div>
