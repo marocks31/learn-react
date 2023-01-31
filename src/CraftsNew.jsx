@@ -4,21 +4,21 @@ import React from 'react';
 export function CraftsNew() {
   return (
     <div id="crafts-new">
-      <h1>New craft</h1>
+      <h1>Submit a new craft:</h1>
       <form>
         <div>
-          Name: <input type="text"/>
+          Name: <input className="form-control" type="text"/>
         </div>
         <div>
-          Description: <input type="text"/>
+          Description: <input className="form-control" type="text"/>
         </div>
         <div>
-          Materials: <input type="text"/>
+          Materials: <input className="form-control" type="text"/>
         </div>
         <div>
-          Image: <input type="text"/>
+          Image: <input className="form-control" type="text"/>
         </div>
-        <button>Create craft</button>
+        <button className="btn btn-primary mt-3">Create craft</button>
       </form>
     </div>
   );

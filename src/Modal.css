@@ -1,6 +1,6 @@
 /* The Modal (background) */
 .modal-background {
-  display: block; /* Hidden by default */
+  display: block;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
@@ -12,13 +12,18 @@
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+#modal-text {
+  background-color: #a67c45;
+  border: 1px solid #888;
+  padding: 20px;
+}
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #ffffff;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
-  border: 1px solid #888;
-  height: 10%;
+  border: 1px solid rgb(216, 216, 216);
+  height: 80%;
   width: 80%; /* Could be more or less, depending on screen size */
 }
 

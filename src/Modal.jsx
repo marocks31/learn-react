@@ -7,7 +7,9 @@ export function Modal(props) {
       className="modal-background">
         <section 
           className="modal-content">
+          <div id="modal-text">
           {props.children}
+          </div>
           <button
             className="close" type="button" onClick={props.onClose}>Close
           </button>
