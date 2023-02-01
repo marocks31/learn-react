@@ -1,8 +1,15 @@
+import axios from "axios";
 export function Signup() {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const params = new FormData(event.target);
+    axios.post("http://localhost:3000/users", params).then(response => { console.log(response)});
+  };
+
   return (
     <div id="signup">
     <h1>Sign up!</h1>
-      <form method="POST" action="http://localhost:3000/users">
+      <form onSubmit={handleSubmit}>
         <div>
           Name: <input name="name" type="text" className="form-control"/>
         </div>
