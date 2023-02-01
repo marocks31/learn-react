@@ -18,7 +18,7 @@ export function CraftsNew() {
         <div>
           Image: <input className="form-control" type="text"/>
         </div>
-        <button className="btn btn-primary mt-3">Create craft</button>
+        <button className="btn btn-dark mt-3">Create craft</button>
       </form>
     </div>
   );

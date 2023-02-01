@@ -11,7 +11,7 @@ export function CraftsIndex(props) {
             <div className="card-body">
               <h5 className="card-title">{craft.name}</h5>
               <p className="card-text">{craft.description}</p>
-              <button onClick={() => props.onSelectCraft(craft)}>More info</button>
+              <button className='btn btn-secondary' onClick={() => props.onSelectCraft(craft)}>More info</button>
             </div>
           </div>
         </div>
