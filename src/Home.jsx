@@ -5,6 +5,7 @@ import { CraftsIndex } from "./CraftsIndex";
 import { CraftsShow } from "./CraftsShow";
 import { Modal } from "./Modal";
 import { Signup } from "./Signup";
+import { Login } from "./Login";
 
 export function Home() {
   // crafts is variable, setCrafts is method to change variable
@@ -36,6 +37,7 @@ export function Home() {
   return (
     <div className="container">
       <Signup/>
+      <Login/>
       <CraftsNew />
       <CraftsIndex myCrafts={crafts} onSelectCraft={handleShowCraft}/>
       <Modal show={isCraftShowModalVisable} onClose={handleHideCraftModal}>
